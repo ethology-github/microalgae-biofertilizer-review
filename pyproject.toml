@@ -1,0 +1,27 @@
+[project]
+name = "microalgae-biofertilizer-review"
+version = "0.1.0"
+description = "A systematic literature review and network analysis of microalgae-based biofertilizers"
+requires-python = ">=3.11"
+dependencies = [
+    "requests",
+    "pandas",
+    "matplotlib",
+    "networkx",
+    "python-docx",
+    "pyyaml",
+    "rapidfuzz",
+    "beautifulsoup4",
+    "lxml",
+    "plotly",
+    "kaleido",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

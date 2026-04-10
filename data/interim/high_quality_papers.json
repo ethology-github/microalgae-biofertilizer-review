@@ -1,0 +1,74 @@
+[
+  {
+    "author_count": 4,
+    "authors": [
+      {
+        "name": "Heba S. El-Sayed"
+      },
+      {
+        "name": "Atiat Hassan"
+      },
+      {
+        "name": "Khouloud M. Barakat"
+      },
+      {
+        "name": "Hasnaa E. -B. Ghonam"
+      }
+    ],
+    "id": "65e6df5113fb2c6cf63ded34",
+    "title": "Improvement of Growth and Biochemical Constituents of Rosmarinus Officinalis by Fermented Spirulina Maxima Biofertilizer",
+    "venue": {
+      "raw": "Plant Physiology and Biochemistry"
+    },
+    "venue_id": "5ea672e5edb6e7d53c045f2a",
+    "year": 2024,
+    "abstract": "Delayed growth period and nature of woody stems are challenges for the urgent economic needs of rosemary plant culturing in the winter season. Different concentrations of biofertilizer initiated from Spirulina maxima, marine Lactobacillus plantarum, molasses and industrial organic waste (IOW) were subjected to freshly cut cuttings of the Rosmarinus officinalis L. (rosemary) plant to study the impact of this biofertilizer on...",
+    "source": "aminer",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M6",
+        "confidence": 0.3
+      },
+      "algae_type": {
+        "code": "A1",
+        "confidence": 0.45
+      },
+      "application": {
+        "code": "C6",
+        "confidence": 0.3
+      },
+      "research_type": {
+        "code": "R6",
+        "confidence": 0.3
+      }
+    },
+    "_quality_score": 13,
+    "_quality_details": {
+      "methodology_total": 3,
+      "control": {
+        "score": 0,
+        "reason": "无对照"
+      },
+      "sample_size": {
+        "score": 0,
+        "reason": "样本量<30或未知"
+      },
+      "statistics": {
+        "score": 3,
+        "reason": "高级统计"
+      },
+      "journal": {
+        "score": 6,
+        "reason": "SCI Q1期刊"
+      },
+      "relevance": {
+        "score": 4,
+        "reason": "完全匹配(微藻1个/生物肥1个/农业1个)"
+      },
+      "total": 13,
+      "decision": "纳入"
+    },
+    "_quality_decision": "纳入"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "total_papers": 106,
+  "include_count": 1,
+  "review_count": 14,
+  "exclude_count": 91,
+  "include_rate": 0.94,
+  "score_distribution": {
+    "score_4": 44,
+    "score_3": 10,
+    "score_5": 28,
+    "score_9": 1,
+    "score_10": 6,
+    "score_8": 5,
+    "score_6": 4,
+    "score_13": 1,
+    "score_7": 4,
+    "score_11": 2,
+    "score_2": 1
+  }
+}

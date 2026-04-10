@@ -1,3 +1,305 @@
 {
-  "test_cases": []
+  "test_cases": [
+    {
+      "id": "tc-001",
+      "stage": "phase1_aminer",
+      "description": "AMiner API调用成功返回文献列表",
+      "input": {
+        "query": "microalgae biofertilizer nitrogen fixation",
+        "source": "aminer",
+        "max_results": 50
+      },
+      "expected": {
+        "status": "success",
+        "returns": "list",
+        "has_results": true,
+        "result_count": "> 0"
+      }
+    },
+    {
+      "id": "tc-002",
+      "stage": "phase1_pubmed",
+      "description": "PubMed API调用成功返回文献列表",
+      "input": {
+        "query": "microalgae biofertilizer nitrogen fixation",
+        "source": "pubmed",
+        "max_results": 50
+      },
+      "expected": {
+        "status": "success",
+        "returns": "list",
+        "has_results": true,
+        "result_count": "> 0"
+      }
+    },
+    {
+      "id": "tc-003",
+      "stage": "phase1_empty_result",
+      "description": "API返回空结果时的处理",
+      "input": {
+        "query": "xyznonexistentquery12345",
+        "source": "aminer",
+        "max_results": 50
+      },
+      "expected": {
+        "status": "success",
+        "returns": "list",
+        "has_results": false,
+        "result_count": 0,
+        "handles_gracefully": true
+      }
+    },
+    {
+      "id": "tc-004",
+      "stage": "phase2_doi_dedup",
+      "description": "基于DOI的精确去重",
+      "input": {
+        "papers": [
+          {"doi": "10.1234/test1", "title": "Paper A"},
+          {"doi": "10.1234/test1", "title": "Paper A (duplicate)"},
+          {"doi": "10.1234/test2", "title": "Paper B"}
+        ]
+      },
+      "expected": {
+        "deduplicated_count": 2,
+        "removed_duplicates": 1,
+        "duplicates_identified_by": "doi"
+      }
+    },
+    {
+      "id": "tc-005",
+      "stage": "phase2_title_similarity",
+      "description": "标题相似度去重(85%阈值)",
+      "input": {
+        "papers": [
+          {"doi": "10.1234/test1", "title": "Effect of Microalgae on Plant Growth"},
+          {"doi": "10.1234/test2", "title": "Effect of Microalgae on Plant Growth and Development"},
+          {"doi": "10.1234/test3", "title": "Completely Different Study on Soil"}
+        ]
+      },
+      "expected": {
+        "similar_pairs_flagged": 1,
+        "similarity_threshold": 0.85,
+        "similarity_method": "title_similarity"
+      }
+    },
+    {
+      "id": "tc-006",
+      "stage": "phase2_merge_databases",
+      "description": "多数据库合并去重",
+      "input": {
+        "aminer_results": [
+          {"doi": "10.1234/a1", "title": "Study A"},
+          {"doi": "10.1234/a2", "title": "Study B"}
+        ],
+        "pubmed_results": [
+          {"doi": "10.1234/a1", "title": "Study A"},
+          {"doi": "10.1234/p1", "title": "Study from PubMed"}
+        ]
+      },
+      "expected": {
+        "total_unique": 3,
+        "aminer_count": 2,
+        "pubmed_count": 2,
+        "merged_deduplicated": 3
+      }
+    },
+    {
+      "id": "tc-007",
+      "stage": "phase3_title_include",
+      "description": "标题关键词匹配-通过筛选",
+      "input": {
+        "title": "Microalgae as Biofertilizer for Nitrogen Fixation in Rice",
+        "keywords": ["microalgae", "biofertilizer", "nitrogen fixation"]
+      },
+      "expected": {
+        "decision": "include",
+        "matched_keywords": ["microalgae", "biofertilizer", "nitrogen fixation"],
+        "match_score": 3
+      }
+    },
+    {
+      "id": "tc-008",
+      "stage": "phase3_title_exclude",
+      "description": "标题关键词匹配-排除筛选",
+      "input": {
+        "title": "Effect of Chemical Fertilizers on Algae Growth",
+        "include_keywords": ["microalgae", "biofertilizer"],
+        "exclude_keywords": ["chemical fertilizer", "pesticide"]
+      },
+      "expected": {
+        "decision": "exclude",
+        "reason": "exclude_keyword_match",
+        "matched_exclude": ["chemical fertilizer"]
+      }
+    },
+    {
+      "id": "tc-009",
+      "stage": "phase3_abstract_filter",
+      "description": "摘要内容筛选验证相关性",
+      "input": {
+        "abstract": "This study investigates the use of Chlorella vulgaris for biological nitrogen fixation in agricultural soils. Results show a 40% increase in soil nitrogen content.",
+        "required_concepts": ["microalgae", "nitrogen fixation", "agricultural"]
+      },
+      "expected": {
+        "passes_filter": true,
+        "concepts_found": ["microalgae", "nitrogen fixation", "agricultural"],
+        "concepts_missing": []
+      }
+    },
+    {
+      "id": "tc-010",
+      "stage": "phase3_mechanism_classification",
+      "description": "机制分类-M1固氮",
+      "input": {
+        "title": "Nitrogen Fixation by Cyanobacteria in Rice Paddies",
+        "abstract": "Cyanobacteria play a crucial role in biological nitrogen fixation..."
+      },
+      "expected": {
+        "primary_mechanism": "M1",
+        "mechanism_label": "nitrogen_fixation",
+        "confidence": "> 0.7"
+      }
+    },
+    {
+      "id": "tc-011",
+      "stage": "phase3_species_classification",
+      "description": "藻种分类-A1螺旋藻",
+      "input": {
+        "title": "Effects of Spirulina platensis on Soil Fertility",
+        "abstract": "Spirulina platensis was applied to agricultural soils..."
+      },
+      "expected": {
+        "species_code": "A1",
+        "species_name": "spirulina",
+        "matched_pattern": "spirulina"
+      }
+    },
+    {
+      "id": "tc-012",
+      "stage": "phase3_application_classification",
+      "description": "应用场景分类-C1大田",
+      "input": {
+        "title": "Field Application of Microalgae Biofertilizer in Wheat Cultivation",
+        "application_context": "field trial"
+      },
+      "expected": {
+        "application_code": "C1",
+        "application_label": "field",
+        "context_matches": true
+      }
+    },
+    {
+      "id": "tc-013",
+      "stage": "phase4_high_quality",
+      "description": "高质量论文评分-≥12分",
+      "input": {
+        "title_score": 3,
+        "abstract_score": 3,
+        "mechanism_score": 2,
+        "species_score": 2,
+        "application_score": 2,
+        "novelty_score": 1
+      },
+      "expected": {
+        "total_score": 13,
+        "quality_tier": "high",
+        "quality_threshold": ">= 12"
+      }
+    },
+    {
+      "id": "tc-014",
+      "stage": "phase4_medium_quality",
+      "description": "中等质量论文评分-8-11分",
+      "input": {
+        "title_score": 2,
+        "abstract_score": 2,
+        "mechanism_score": 2,
+        "species_score": 1,
+        "application_score": 1,
+        "novelty_score": 1
+      },
+      "expected": {
+        "total_score": 9,
+        "quality_tier": "medium",
+        "quality_threshold": "8-11"
+      }
+    },
+    {
+      "id": "tc-015",
+      "stage": "phase4_low_quality",
+      "description": "低质量论文评分-<8分",
+      "input": {
+        "title_score": 1,
+        "abstract_score": 1,
+        "mechanism_score": 1,
+        "species_score": 1,
+        "application_score": 1,
+        "novelty_score": 0
+      },
+      "expected": {
+        "total_score": 5,
+        "quality_tier": "low",
+        "quality_threshold": "< 8"
+      }
+    },
+    {
+      "id": "tc-016",
+      "stage": "phase5_chart_generation",
+      "description": "图表生成功能",
+      "input": {
+        "chart_type": "bar",
+        "data": {
+          "categories": ["M1-N固氮", "M2-溶磷", "M3-促生"],
+          "values": [45, 23, 32]
+        },
+        "title": "机制分布统计"
+      },
+      "expected": {
+        "generation_status": "success",
+        "output_format": "image",
+        "file_saved": true
+      }
+    },
+    {
+      "id": "tc-017",
+      "stage": "phase6_report_completeness",
+      "description": "报告章节完整性检查",
+      "input": {
+        "report_sections": [
+          "1. 引言",
+          "2. 方法论",
+          "3. 文献筛选结果",
+          "4. 机制分析",
+          "5. 藻种分析",
+          "6. 应用场景分析",
+          "7. 质量评估",
+          "8. 讨论",
+          "9. 结论",
+          "10. 参考文献"
+        ]
+      },
+      "expected": {
+        "all_sections_present": true,
+        "missing_sections": [],
+        "section_count": 10
+      }
+    },
+    {
+      "id": "tc-018",
+      "stage": "phase6_chart_citation_format",
+      "description": "图表引用格式规范",
+      "input": {
+        "figure_number": "图3.2",
+        "caption": "机制分类分布图",
+        "reference_text": "如图3.2所示，氮固定是主要机制"
+      },
+      "expected": {
+        "format_valid": true,
+        "has_figure_number": true,
+        "has_caption": true,
+        "inline_citation_correct": true
+      }
+    }
+  ]
 }

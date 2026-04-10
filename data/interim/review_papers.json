@@ -1,0 +1,1013 @@
+[
+  {
+    "author_count": 5,
+    "authors": [
+      {
+        "name": "Jackeline de Siqueira Castro"
+      },
+      {
+        "name": "Maria Lucia Calijuri"
+      },
+      {
+        "name": "Jessica Ferreira"
+      },
+      {
+        "name": "Paula Peixoto Assemany"
+      },
+      {
+        "name": "Vinicius Jose Ribeiro"
+      }
+    ],
+    "id": "5e90458e9fced0a24bddb665",
+    "title": "Microalgae Based Biofertilizer: A Life Cycle Approach.",
+    "venue": {
+      "raw": "The Science of The Total Environment"
+    },
+    "venue_id": "5ea5d89fedb6e7d53c04202e",
+    "year": 2020,
+    "abstract": "Waste, especially biomass in general, is a large reservoir of nutrients that can be recovered through different technologies and used to produce biofertilizers. In the present study, environmental impacts of the production of microalgae biomass-based phosphate biofertilizer compared to triple superphosphate through life-cycle assessment conducted in the Simapro® software were investigated. The functional unit of the analysis was 163 g of P for both fertilizers. Phosphorus was recovered from a meat...",
+    "source": "aminer",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M6",
+        "confidence": 0.3
+      },
+      "algae_type": {
+        "code": "A6",
+        "confidence": 0.45
+      },
+      "application": {
+        "code": "C6",
+        "confidence": 0.3
+      },
+      "research_type": {
+        "code": "R4",
+        "confidence": 0.45
+      }
+    },
+    "_quality_score": 9,
+    "_quality_details": {
+      "methodology_total": 0,
+      "control": {
+        "score": 0,
+        "reason": "无对照"
+      },
+      "sample_size": {
+        "score": 0,
+        "reason": "样本量<30或未知"
+      },
+      "statistics": {
+        "score": 0,
+        "reason": "无统计分析"
+      },
+      "journal": {
+        "score": 6,
+        "reason": "SCI Q1期刊"
+      },
+      "relevance": {
+        "score": 3,
+        "reason": "多关键词(微藻2个/生物肥1个/农业0个)"
+      },
+      "total": 9,
+      "decision": "复核"
+    },
+    "_quality_decision": "复核"
+  },
+  {
+    "abstract_zh_slice": "[目的]探究废水资源化小球藻在植物营养方面的高值化利用潜能.[方法]研究小球藻对污水中氨氮、磷的吸收率,以及不同小球藻处理对拟南芥植株生长的生物肥效及对土壤酶活性的影响.[结果]供试水样...",
+    "author_count": 5,
+    "authors": [
+      {
+        "name_zh": "杨方浩"
+      },
+      {
+        "name_zh": "侯利园"
+      },
+      {
+        "name_zh": "苑瑞东"
+      },
+      {
+        "name_zh": "程晓磊"
+      },
+      {
+        "name_zh": "黎滢静"
+      }
+    ],
+    "id": "604b43f06f90b7f6caf8087b",
+    "issue": "9",
+    "title": "Evaluation of Wastewater-grown Chlorella vulgaris as a Biofertilizer for Arabidopsis thaliana",
+    "title_zh": "废水资源化小球藻对拟南芥生长的肥效研究",
+    "venue": {
+      "raw": "Journal of Anhui Agricultural Sciences",
+      "raw_zh": "安徽农业科学"
+    },
+    "venue_id": "5eb9aeafedb6e7d53c0d2b94",
+    "year": 2018,
+    "abstract": "[Objective]To explore the high value utilization potential of Chlorella vulgaris in plant nutrition. [Method]The absorption rate of ammonia nitrogen and phosphorus in sewage by Chlorella vulgaris was studied,and the effect of Chlorella vulgaris on the growth of Arabidopsis thaliana plants and the activities of soil enzymes were also studied....",
+    "source": "aminer",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M6",
+        "confidence": 0.3
+      },
+      "algae_type": {
+        "code": "A2",
+        "confidence": 0.6
+      },
+      "application": {
+        "code": "C4",
+        "confidence": 0.45
+      },
+      "research_type": {
+        "code": "R5",
+        "confidence": 0.45
+      }
+    },
+    "_quality_score": 10,
+    "_quality_details": {
+      "methodology_total": 0,
+      "control": {
+        "score": 0,
+        "reason": "无对照"
+      },
+      "sample_size": {
+        "score": 0,
+        "reason": "样本量<30或未知"
+      },
+      "statistics": {
+        "score": 0,
+        "reason": "无统计分析"
+      },
+      "journal": {
+        "score": 6,
+        "reason": "SCI Q1期刊"
+      },
+      "relevance": {
+        "score": 4,
+        "reason": "完全匹配(微藻1个/生物肥1个/农业2个)"
+      },
+      "total": 10,
+      "decision": "复核"
+    },
+    "_quality_decision": "复核"
+  },
+  {
+    "author_count": 2,
+    "authors": [
+      {
+        "name": "Odgerel B"
+      },
+      {
+        "name": "Tserendulam D"
+      }
+    ],
+    "id": "62288a6a5aee126c0ff22f32",
+    "title": "EFFECT OF CHLORELLA AS A BIOFERTILIZER ON GERMINATION OF WHEAT AND BARLEY GRAINS",
+    "venue": {
+      "raw": "Proceedings of the Mongolian Academy of Sciences"
+    },
+    "venue_id": "6926c0e775de563df18af410",
+    "year": 2017,
+    "abstract": "Most of the agriculture sectors have been dependent heavily on inorganic chemical-based fertilizers, which are harmful for both human health and environment. The utilization of beneficial microbes as a biofertilizer has become major concern in industrial agriculture for their potential role in food safety and...",
+    "source": "aminer",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M6",
+        "confidence": 0.3
+      },
+      "algae_type": {
+        "code": "A2",
+        "confidence": 0.45
+      },
+      "application": {
+        "code": "C1",
+        "confidence": 0.6
+      },
+      "research_type": {
+        "code": "R6",
+        "confidence": 0.3
+      }
+    },
+    "_quality_score": 10,
+    "_quality_details": {
+      "methodology_total": 0,
+      "control": {
+        "score": 0,
+        "reason": "无对照"
+      },
+      "sample_size": {
+        "score": 0,
+        "reason": "样本量<30或未知"
+      },
+      "statistics": {
+        "score": 0,
+        "reason": "无统计分析"
+      },
+      "journal": {
+        "score": 6,
+        "reason": "SCI Q1期刊"
+      },
+      "relevance": {
+        "score": 4,
+        "reason": "完全匹配(微藻1个/生物肥1个/农业2个)"
+      },
+      "total": 10,
+      "decision": "复核"
+    },
+    "_quality_decision": "复核"
+  },
+  {
+    "author_count": 10,
+    "authors": [
+      {
+        "name": "Ma  Chen"
+      },
+      {
+        "name": "Cui  Hongli"
+      },
+      {
+        "name": "Ren  Chenggang"
+      },
+      {
+        "name": "Yang  Jianchao"
+      },
+      {
+        "name": "Liu  Zhengyi"
+      },
+      {
+        "name": "Tang  Tao"
+      },
+      {
+        "name": "Ji  Chunli"
+      },
+      {
+        "name": "Zhang  Chunhui"
+      },
+      {
+        "name": "Xue  Jinai"
+      },
+      {
+        "name": "Li  Runzhi"
+      }
+    ],
+    "id": "627cde475aee126c0f555e15",
+    "issue": "3",
+    "title": "The Seed Primer and Biofertilizer Performances of Living Chlorella Pyrenoidosa on Chenopodium Quinoa under Saline-Alkali Condition",
+    "venue": {
+      "raw": "Journal of Applied Phycology"
+    },
+    "venue_id": "5ea70d08edb6e7d53c04a1f6",
+    "year": 2022,
+    "abstract": "Soil salinization and alkalization seriously restrict agricultural production. Biofertilizer can alleviate their impact and increase agricultural sustainability. However, the effects of living green microalgae on crop growth under saline-alkali stress are unclear. In this study, the unicellular green microalga Chlorella pyrenoidosa , used as a seed primer and a biofertilizer, was applied to investigate its effects on the growth characteristic of Chenopodium quinoa under artificial saline-alkali conditions (1:1 ratio of NaCl and NaHCO 3 ) and natural saline-alkali soils. The seed primer experiment revealed that saline-alkali stresses inhibited seed...",
+    "source": "aminer",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M6",
+        "confidence": 0.3
+      },
+      "algae_type": {
+        "code": "A2",
+        "confidence": 0.6
+      },
+      "application": {
+        "code": "C4",
+        "confidence": 0.6
+      },
+      "research_type": {
+        "code": "R1",
+        "confidence": 0.45
+      }
+    },
+    "_quality_score": 8,
+    "_quality_details": {
+      "methodology_total": 0,
+      "control": {
+        "score": 0,
+        "reason": "无对照"
+      },
+      "sample_size": {
+        "score": 0,
+        "reason": "样本量<30或未知"
+      },
+      "statistics": {
+        "score": 0,
+        "reason": "无统计分析"
+      },
+      "journal": {
+        "score": 4,
+        "reason": "SCI Q2期刊"
+      },
+      "relevance": {
+        "score": 4,
+        "reason": "完全匹配(微藻3个/生物肥1个/农业3个)"
+      },
+      "total": 8,
+      "decision": "复核"
+    },
+    "_quality_decision": "复核"
+  },
+  {
+    "author_count": 5,
+    "authors": [
+      {
+        "name": "Shazia Bibi"
+      },
+      {
+        "name": "Imen Saadaoui"
+      },
+      {
+        "name": "Amina Bibi"
+      },
+      {
+        "name": "Mohammad Al-Ghouti"
+      },
+      {
+        "name": "Mohammed H. Abu-Dieyeh"
+      }
+    ],
+    "id": "65e6ca7b13fb2c6cf62ae022",
+    "title": "Applications, Advancements, and Challenges of Cyanobacteria-Based Biofertilizers for Sustainable Agro and Ecosystems in Arid Climates",
+    "venue": {
+      "raw": "BIORESOURCE TECHNOLOGY REPORTS"
+    },
+    "venue_id": "5ea570b6edb6e7d53c03f436",
+    "year": 2024,
+    "abstract": "Based on the increasing world population, the food demands have tremendously increased. Chemical-based conventional agricultural practices will be required to fulfill the food demands, which will damage the soil and create other environmental concerns. Cyanobacteria are one of the sustainable solutions to overcome agricultural struggles. With the potential to grow...",
+    "source": "aminer",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M6",
+        "confidence": 0.3
+      },
+      "algae_type": {
+        "code": "A3",
+        "confidence": 0.45
+      },
+      "application": {
+        "code": "C4",
+        "confidence": 0.45
+      },
+      "research_type": {
+        "code": "R6",
+        "confidence": 0.3
+      }
+    },
+    "_quality_score": 10,
+    "_quality_details": {
+      "methodology_total": 0,
+      "control": {
+        "score": 0,
+        "reason": "无对照"
+      },
+      "sample_size": {
+        "score": 0,
+        "reason": "样本量<30或未知"
+      },
+      "statistics": {
+        "score": 0,
+        "reason": "无统计分析"
+      },
+      "journal": {
+        "score": 6,
+        "reason": "SCI Q1期刊"
+      },
+      "relevance": {
+        "score": 4,
+        "reason": "完全匹配(微藻1个/生物肥1个/农业2个)"
+      },
+      "total": 10,
+      "decision": "复核"
+    },
+    "_quality_decision": "复核"
+  },
+  {
+    "author_count": 5,
+    "authors": [
+      {
+        "name": "Saoli Chanda"
+      },
+      {
+        "name": "Sanku Dattamudi"
+      },
+      {
+        "name": "Krishnaswamy Jayachandran"
+      },
+      {
+        "name": "Leonard J. Scinto"
+      },
+      {
+        "name": "Mahadev Bhat"
+      }
+    ],
+    "id": "6604424b13fb2c6cf6a74867",
+    "issue": "3",
+    "title": "The Application of Cyanobacteria As a Biofertilizer for Okra (abelmoschus Esculentus) Production with a Focus on Environmental and Ecological Sustainability",
+    "venue": {
+      "raw": "Environments"
+    },
+    "venue_id": "5ea4dcc2edb6e7d53c0286c2",
+    "year": 2024,
+    "abstract": "Cyanobacteria, an important addition to biofertilizers, are gaining popularity for their multifaceted benefits in sustainable agriculture and ecosystem restoration. However, harmful algal blooms (HABs) in freshwater, predominantly caused by cyanobacteria, prevent sunlight penetration into the water and develop hypoxic and anoxic conditions. We collected cyanobacteria slurry from Lake Jesup (Central Florida, USA), repurposed it as a biofertilizer, and incorporated it in a typical South Florida calcite soil for high-value okra (Abelmoschus esculentus; var: Clemson spineless) production. Experiments were conducted at the Organic Garden Shade House and Greenhouse located inside the main...",
+    "source": "aminer",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M6",
+        "confidence": 0.3
+      },
+      "algae_type": {
+        "code": "A3",
+        "confidence": 0.45
+      },
+      "application": {
+        "code": "C4",
+        "confidence": 0.45
+      },
+      "research_type": {
+        "code": "R1",
+        "confidence": 0.6
+      }
+    },
+    "_quality_score": 8,
+    "_quality_details": {
+      "methodology_total": 0,
+      "control": {
+        "score": 0,
+        "reason": "无对照"
+      },
+      "sample_size": {
+        "score": 0,
+        "reason": "样本量<30或未知"
+      },
+      "statistics": {
+        "score": 0,
+        "reason": "无统计分析"
+      },
+      "journal": {
+        "score": 4,
+        "reason": "SCI Q2期刊"
+      },
+      "relevance": {
+        "score": 4,
+        "reason": "完全匹配(微藻1个/生物肥1个/农业3个)"
+      },
+      "total": 8,
+      "decision": "复核"
+    },
+    "_quality_decision": "复核"
+  },
+  {
+    "author_count": 8,
+    "authors": [
+      {
+        "name": "Xin Yi Choong"
+      },
+      {
+        "name": "Man Kee Lam"
+      },
+      {
+        "name": "Yee Ho Chai"
+      },
+      {
+        "name": "Revathi Raviadaran"
+      },
+      {
+        "name": "Inn Shi Tan"
+      },
+      {
+        "name": "Jibrail Kansedo"
+      },
+      {
+        "name": "Henry Chee Yew Foo"
+      },
+      {
+        "name": "Adrian Chun Minh Loy"
+      }
+    ],
+    "id": "698ef9ce9be8eb7c4b58e8b2",
+    "title": "Correlative Analysis of Chlorella Vulgaris Growth and Biochemical Composition for Biofertilizer Application in Mung Bean",
+    "venue": {
+      "raw": "BIORESOURCE TECHNOLOGY REPORTS"
+    },
+    "venue_id": "5ea570b6edb6e7d53c03f436",
+    "year": 2026,
+    "abstract": "Microalgae-derived biofertilizers offer a sustainable alternative to chemical inputs. This study optimized Chlorella vulgaris biomass production and evaluated its efficacy as a biofertilizer for Mung bean (Vigna radiata). A parametric analysis investigated nutrient source, concentration, pH, and light intensity. Results indicated that chicken manure was the superior nutrient source, outperforming goat manure by 181% in biomass yield. The optimal cultivation conditions were identified as 10% (v/v) chicken manure, pH 3.0 +/- 0.5,...",
+    "source": "aminer",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M6",
+        "confidence": 0.3
+      },
+      "algae_type": {
+        "code": "A2",
+        "confidence": 0.6
+      },
+      "application": {
+        "code": "C6",
+        "confidence": 0.3
+      },
+      "research_type": {
+        "code": "R5",
+        "confidence": 0.45
+      }
+    },
+    "_quality_score": 10,
+    "_quality_details": {
+      "methodology_total": 0,
+      "control": {
+        "score": 0,
+        "reason": "无对照"
+      },
+      "sample_size": {
+        "score": 0,
+        "reason": "样本量<30或未知"
+      },
+      "statistics": {
+        "score": 0,
+        "reason": "无统计分析"
+      },
+      "journal": {
+        "score": 6,
+        "reason": "SCI Q1期刊"
+      },
+      "relevance": {
+        "score": 4,
+        "reason": "完全匹配(微藻3个/生物肥1个/农业1个)"
+      },
+      "total": 10,
+      "decision": "复核"
+    },
+    "_quality_decision": "复核"
+  },
+  {
+    "id": "41602522",
+    "pmid": "41602522",
+    "title": "Microalgae and cyanobacteria as a tool for agricultural sustainability: a review of biofertilizer and biostimulant potential.",
+    "abstract": "Microalgae and cyanobacteria are emerging as sustainable alternatives to chemical fertilizers and pesticides, offering nutrient recycling, stress mitigation, and environmental restoration within the framework of circular bioeconomy. This review synthesizes recent advances in the utilization of cyanobacteria and green microalgae as biofertilizers, biostimulants, and biopesticides, emphasizing their physiological mechanisms and agronomic potential. Microalgae and cyanobacteria can fix atmospheric nitrogen, solubilize phosphorus, and supply essential micronutrients through exopolysaccharides, organic acids, and siderophores, thereby improving soil fertility and structure. Their metabolites, including phytohormones, amino acids, and antioxidants, stimulate seed germination, root growth, nutrient uptake, and tolerance to abiotic stresses such as drought and salinity. Moreover, allelochemicals and antimicrobial compounds from microalgae can suppress plant pathogens and reduce pesticide dependence. Integrating microalgae cultivation with wastewater and flue gas utilization promotes nutrient recycling and CO2 sequestration, further enhancing environmental sustainability. However, large-scale application remains limited by biomass production costs, inconsistent performance under field conditions, and regulatory uncertainty. Overall, microalgae-based fertilizers and biostimulants hold great promise for sustainable crop production and soil health improvement. Future research should focus on low-cost cultivation and harvesting technologies, field scale validation, and standardized product formulations to accelerate the transition toward climate smart and resource sustainable agriculture.",
+    "authors": [
+      "Zhongliang Sun",
+      "Xiaoyan Liu",
+      "Adamu Yunusa Ugya",
+      "Haiyan Liu",
+      "Liqin Sun",
+      "Guanghong Luo"
+    ],
+    "source": "pubmed",
+    "year": "",
+    "journal": "",
+    "doi": "",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M4",
+        "confidence": 0.6
+      },
+      "algae_type": {
+        "code": "A3",
+        "confidence": 0.45
+      },
+      "application": {
+        "code": "C1",
+        "confidence": 0.45
+      },
+      "research_type": {
+        "code": "R3",
+        "confidence": 0.45
+      }
+    },
+    "_quality_score": 8,
+    "_quality_details": {
+      "methodology_total": 0,
+      "control": {
+        "score": 0,
+        "reason": "无对照"
+      },
+      "sample_size": {
+        "score": 0,
+        "reason": "样本量<30或未知"
+      },
+      "statistics": {
+        "score": 0,
+        "reason": "无统计分析"
+      },
+      "journal": {
+        "score": 4,
+        "reason": "SCI Q2期刊"
+      },
+      "relevance": {
+        "score": 4,
+        "reason": "完全匹配(微藻3个/生物肥3个/农业7个)"
+      },
+      "total": 8,
+      "decision": "复核"
+    },
+    "_quality_decision": "复核"
+  },
+  {
+    "id": "40113317",
+    "pmid": "40113317",
+    "title": "[Effect and Mechanism of Chlamydomonas reinhartii Living Cell Agents in Alleviating Cd Stress on Wheat Seedlings].",
+    "abstract": "Cadmium （Cd） pollution not only leads to the reduction in crop yields but also migrates and accumulates through the food chain, thus posing a threat to human health. It is an important issue to reduce Cd uptake and enrichment in crops and increase crop resistance to Cd stress for sustainable development of green-health agriculture. To establish a novel agronomic technique using microalgae to control Cd pollution and improve crop stress resistance, the microalga Chlamydomonas reinhardtii and wheat （Triticum aestivum）were employed for systematic investigation so as to the elucidate effects and mechanism of microalgae in blocking Cd migration and enhancing crop resistance to Cd stress. The test crop materials were the winter wheat variety JM182 and spring wheat variety JC6. Hydroponic experiments were used to simulate Cd stress at two dosages, 50 mg·L-1 （Cd50） and 100 mg·L-1 （Cd100）. Two different dosages of C. reinhardtii living cell agents, i.e., the microalgal cell cultures with D680 = 1.0 （A1.0） and D680 = 2.0 （A2.0）, were prepared using conventional microalgal-cultivation methods and subsequently used to treat wheat seedlings under Cd stress. Several physiological and biochemical parameters were determined for wheat seedlings under two doses of Cd stress, respectively, including growth features, photosynthesis, cellular antioxidant enzyme activity, Cd uptake, transportation and accumulation, and transcriptions of the genes associated with heavy metal transportation. The results showed that Cd stress crucially inhibited the growth of wheat seedlings. However, the application of C. reinhardtii living cell agents significantly increased the contents of photosynthetic pigments （chlorophyll a, chlorophyll b, and carotenoids） and activated the antioxidant enzyme system activities （SOD, POD, CAT, GSH, and APX）. The microalgal living cell agents also reduced the damage of Cd stress on wheat seedling growth. Moreover, both doses （A1.0 and A2.0） of C. reinhardtii living cell agents downregulated the expression of the genes related to heavy metal absorption and transportation （TaHMA2, TaHMA3, TaNramp1,and TaLCT1）. Analysis of Cd contents indicated that Cd stress resulted in Cd accumulation in wheat seedlings, with a higher level of Cd in JC6 than in JM182 under both doses of Cd stresses. Cd50 and Cd100 stresses led to Cd levels up to 185.01 mg·kg-1 and 342.11 mg·kg-1 in JC6 wheat seedlings and 176.76 mg·kg-1 and 317.65 mg·kg-1 in JM182, respectively. Notably, the addition of the microalgal living cell agent significantly reduced Cd enrichment in wheat seedlings of both varieties under Cd stresses. Compared to the Cd level in JC6 wheat seedlings under Cd50 stress, the Cd accumulation level in roots and stem-leaf parts of A2.0-treated JC6 wheat seedlings was reduced by 76.80% and 66.91%, respectively, followed by a 27.58% diminution of Cd transport rate from roots toward stem-leaf parts. Collectively, microalgal living cell agents could remarkably reduce Cd uptake, accumulation, and transportation from roots to stem-leaf organs of wheat seedlings by down-regulating gene expressions involved in heavy metal absorption and transportation. The microalgal living cell agent can also activate the antioxidant system and increase photosynthesis, thus mitigating Cd toxicity and promoting the growth and development of wheat seedlings. The present findings provide a scientific basis and new strategy for using microalgal living cell agents as bio-fertilizers or bio-stimulants to impede migration of heavy metal pollutants and enhance plant resistance to heavy metal stresses.",
+    "authors": [
+      "Chun-Yan Lei",
+      "Ya-Nan Li",
+      "Meng-Jing Liang",
+      "Ze Yang",
+      "Yan Sun",
+      "Chun-Li Ji",
+      "Chun-Hui Zhang",
+      "Run-Zhi Li",
+      "Xi-Ping Sun",
+      "Hong-Li Cui"
+    ],
+    "source": "pubmed",
+    "year": "",
+    "journal": "",
+    "doi": "",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M4",
+        "confidence": 0.6
+      },
+      "algae_type": {
+        "code": "A4",
+        "confidence": 0.45
+      },
+      "application": {
+        "code": "C1",
+        "confidence": 0.6
+      },
+      "research_type": {
+        "code": "R4",
+        "confidence": 0.6
+      }
+    },
+    "_quality_score": 11,
+    "_quality_details": {
+      "methodology_total": 1,
+      "control": {
+        "score": 1,
+        "reason": "有对照但非随机"
+      },
+      "sample_size": {
+        "score": 0,
+        "reason": "样本量<30或未知"
+      },
+      "statistics": {
+        "score": 0,
+        "reason": "无统计分析"
+      },
+      "journal": {
+        "score": 6,
+        "reason": "SCI Q1期刊"
+      },
+      "relevance": {
+        "score": 4,
+        "reason": "完全匹配(微藻3个/生物肥1个/农业6个)"
+      },
+      "total": 11,
+      "decision": "复核"
+    },
+    "_quality_decision": "复核"
+  },
+  {
+    "id": "40044052",
+    "pmid": "40044052",
+    "title": "Maximizing Haematococcus biorefineries: Ionic liquid-based astaxanthin recovery, biocosmetic formulation, solar cell applications, and biofertilizer valorization.",
+    "abstract": "Microalgae, particularly Haematococcus pluvialis, produce astaxanthin (AXT), a potent antioxidant with growing potential in the food, pharmaceutical, biocosmetic, and renewable energy sectors. This study proposes an integrated biorefinery model that employs advanced extraction processes, including bio-based ionic liquids, to efficiently recover AXT from H. pluvialis while minimizing environmental impact. The resulting platform strategically repurposes the post-extraction biomass as a biofertilizer, thus contributing to zero-waste objectives. By uniting biocosmetics, solar energy applications, and agriculture within a single framework, this model underscores the synergy between economic feasibility and ecological responsibility, highlighting the transformative role of microbial-derived AXT in sustainable, high-value product development.",
+    "authors": [
+      "Cassamo U Mussagy",
+      "Angie V Caicedo-Paz",
+      "Debora Figueroa",
+      "Christian Santander",
+      "Felipe González",
+      "Alessia Tropea",
+      "Luigi Mondello",
+      "Donatella Spadaro",
+      "Stefano Trocino",
+      "Rodolfo D Piazza",
+      "Rodrigo F C Marques",
+      "Karina Godoy",
+      "Pablo Cornejo"
+    ],
+    "source": "pubmed",
+    "year": "",
+    "journal": "",
+    "doi": "",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M4",
+        "confidence": 0.45
+      },
+      "algae_type": {
+        "code": "A6",
+        "confidence": 0.45
+      },
+      "application": {
+        "code": "C6",
+        "confidence": 0.3
+      },
+      "research_type": {
+        "code": "R5",
+        "confidence": 0.45
+      }
+    },
+    "_quality_score": 10,
+    "_quality_details": {
+      "methodology_total": 0,
+      "control": {
+        "score": 0,
+        "reason": "无对照"
+      },
+      "sample_size": {
+        "score": 0,
+        "reason": "样本量<30或未知"
+      },
+      "statistics": {
+        "score": 0,
+        "reason": "无统计分析"
+      },
+      "journal": {
+        "score": 6,
+        "reason": "SCI Q1期刊"
+      },
+      "relevance": {
+        "score": 4,
+        "reason": "完全匹配(微藻3个/生物肥1个/农业1个)"
+      },
+      "total": 10,
+      "decision": "复核"
+    },
+    "_quality_decision": "复核"
+  },
+  {
+    "id": "38140459",
+    "pmid": "38140459",
+    "title": "Biostimulatory Effects of Chlorella fusca CHK0059 on Plant Growth and Fruit Quality of Strawberry.",
+    "abstract": "Green algae have been receiving widespread attention for their use as biofertilizers for agricultural production, but more studies are required to increase the efficiency of their use. This study aimed to investigate the effects of different levels of Chlorella fusca CHK0059 application on strawberry plant growth and fruit quality. A total of 800 strawberry seedlings were planted in a greenhouse and were grown for seven months under different Chlorella application rates: 0 (control), 0.1, 0.2, and 0.4% of the optimal cell density (OCD; 1.0 × 107 cells mL-1). The Chlorella application was conducted weekly via an irrigation system, and the characteristics of fruit samples were monitored monthly over a period of five months. The growth (e.g., phenotype, dry weight, and nutrition) and physiological (e.g., Fv/Fm and chlorophylls) parameters of strawberry plants appeared to be enhanced by Chlorella application over time, an enhancement which became greater as the application rate increased. Likewise, the hardness and P content of strawberry fruits had a similar trend. Meanwhile, 0.2% OCD treatment induced the highest values of soluble solid content (9.3-12 °Brix) and sucrose content (2.06-2.97 g 100 g-1) in the fruits as well as fruit flavor quality indices (e.g., sugars:acids ratio and sweetness index) during the monitoring, whilst control treatment represented the lowest values. In addition, the highest anthocyanin content in fruits was observed in 0.4% OCD treatment, which induced the lowest incidence of grey mold disease (Botrytis cinerea) on postharvest fruits for 45 days. Moreover, a high correlation between plants' nutrients and photosynthetic variables and fruits' sucrose and anthocyanin contents was identified through the results of principal component analysis. Overall, C. fusca CHK0059 application was found to promote the overall growth and performance of strawberry plants, contributing to the improvement of strawberry quality and yield, especially in 0.2% OCD treatment.",
+    "authors": [
+      "Young-Nam Kim",
+      "Jun Hyeok Choi",
+      "Song Yeob Kim",
+      "Young-Eun Yoon",
+      "Hyeonji Choe",
+      "Keum-Ah Lee",
+      "Vimalraj Kantharaj",
+      "Min-Jeong Kim",
+      "Yong Bok Lee"
+    ],
+    "source": "pubmed",
+    "year": "",
+    "journal": "",
+    "doi": "",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M6",
+        "confidence": 0.3
+      },
+      "algae_type": {
+        "code": "A2",
+        "confidence": 0.45
+      },
+      "application": {
+        "code": "C2",
+        "confidence": 0.45
+      },
+      "research_type": {
+        "code": "R1",
+        "confidence": 0.45
+      }
+    },
+    "_quality_score": 11,
+    "_quality_details": {
+      "methodology_total": 7,
+      "control": {
+        "score": 1,
+        "reason": "有对照但非随机"
+      },
+      "sample_size": {
+        "score": 3,
+        "reason": "样本量n=800"
+      },
+      "statistics": {
+        "score": 3,
+        "reason": "高级统计"
+      },
+      "journal": {
+        "score": 0,
+        "reason": "期刊信息未知"
+      },
+      "relevance": {
+        "score": 4,
+        "reason": "完全匹配(微藻2个/生物肥2个/农业5个)"
+      },
+      "total": 11,
+      "decision": "复核"
+    },
+    "_quality_decision": "复核"
+  },
+  {
+    "id": "38068665",
+    "pmid": "38068665",
+    "title": "Sustainability in Aquaponics: Industrial Spirulina Waste as a Biofertilizer for Lactuca sativa L. Plants.",
+    "abstract": "Aquaponics represents an alternative to traditional soil cultivation. To solve the problem of nutrient depletion that occurs in this biotechnological system, the application of a spirulina-based biofertilizer was assessed. The microalgal waste used in this study came from industrial processing. Four different dilutions of the supernatant portion of this waste were sprayed on lettuce plants cultivated in an aquaponics system installed at the Botanical Gardens of the Tor Vergata University of Rome. The biofertilizer was characterized to evaluate its amount of macro- and micronutrients. The analysis conducted on the plants involved both morpho-biometric aspects and qualitative-quantitative measurements. The experiments showed that the spirulina extract had a positive effect on the growth and nutraceutical content of the lettuce plants; the obtained results highlighted that a dilution of 75% was the best for treatment. The use of the proposed organic and recycled fertilizer could increase the sustainability of crop cultivation and promote the functioning of aquaponics systems.",
+    "authors": [
+      "Davide Frassine",
+      "Roberto Braglia",
+      "Francesco Scuderi",
+      "Enrico Luigi Redi",
+      "Angelo Gismondi",
+      "Gabriele Di Marco",
+      "Lorenza Rugnini",
+      "Antonella Canini"
+    ],
+    "source": "pubmed",
+    "year": "",
+    "journal": "",
+    "doi": "",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M6",
+        "confidence": 0.3
+      },
+      "algae_type": {
+        "code": "A1",
+        "confidence": 0.45
+      },
+      "application": {
+        "code": "C1",
+        "confidence": 0.45
+      },
+      "research_type": {
+        "code": "R1",
+        "confidence": 0.45
+      }
+    },
+    "_quality_score": 8,
+    "_quality_details": {
+      "methodology_total": 0,
+      "control": {
+        "score": 0,
+        "reason": "无对照"
+      },
+      "sample_size": {
+        "score": 0,
+        "reason": "样本量<30或未知"
+      },
+      "statistics": {
+        "score": 0,
+        "reason": "无统计分析"
+      },
+      "journal": {
+        "score": 4,
+        "reason": "SCI Q2期刊"
+      },
+      "relevance": {
+        "score": 4,
+        "reason": "完全匹配(微藻1个/生物肥1个/农业3个)"
+      },
+      "total": 8,
+      "decision": "复核"
+    },
+    "_quality_decision": "复核"
+  },
+  {
+    "id": "36736400",
+    "pmid": "36736400",
+    "title": "Roles of microalgae-based biofertilizer in sustainability of green agriculture and food-water-energy security nexus.",
+    "abstract": "For years, agrochemical fertilizers have been used in agriculture for crop production. However, intensive utilization of chemical fertilizers is not an ecological and environmental choice since they are destroying soil health and causing an emerging threat to agricultural production on a global scale. Under the circumstances of the increasing utilization of chemical fertilizers, cultivating microalgae to produce biofertilizers would be a wise solution since desired environmental targets will be obtained including (1) replacing chemical fertilizer while improving crop yields and soil health; (2) reducing the harvest of non-renewable elements from limited natural resources for chemical fertilizers production, and (3) mitigating negative influences of climate change through CO2 capture through microalgae cultivation. Recent improvements in microalgae-derived-biofertilizer-applied agriculture will be summarized in this review article. At last, the recent challenges of applying biofertilizers will be discussed as well as the perspective regarding the concept of circular bio-economy and sustainable development goals (SDGs).",
+    "authors": [
+      "Thanh Ngoc-Dan Cao",
+      "Hussnain Mukhtar",
+      "Linh-Thy Le",
+      "Duyen Phuc-Hanh Tran",
+      "My Thi Tra Ngo",
+      "Mai-Duy-Thong Pham",
+      "Thanh-Binh Nguyen",
+      "Thi-Kim-Quyen Vo",
+      "Xuan-Thanh Bui"
+    ],
+    "source": "pubmed",
+    "year": "",
+    "journal": "",
+    "doi": "",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M6",
+        "confidence": 0.3
+      },
+      "algae_type": {
+        "code": "A6",
+        "confidence": 0.45
+      },
+      "application": {
+        "code": "C1",
+        "confidence": 0.45
+      },
+      "research_type": {
+        "code": "R3",
+        "confidence": 0.45
+      }
+    },
+    "_quality_score": 8,
+    "_quality_details": {
+      "methodology_total": 0,
+      "control": {
+        "score": 0,
+        "reason": "无对照"
+      },
+      "sample_size": {
+        "score": 0,
+        "reason": "样本量<30或未知"
+      },
+      "statistics": {
+        "score": 0,
+        "reason": "无统计分析"
+      },
+      "journal": {
+        "score": 4,
+        "reason": "SCI Q2期刊"
+      },
+      "relevance": {
+        "score": 4,
+        "reason": "完全匹配(微藻2个/生物肥1个/农业5个)"
+      },
+      "total": 8,
+      "decision": "复核"
+    },
+    "_quality_decision": "复核"
+  },
+  {
+    "id": "36550226",
+    "pmid": "36550226",
+    "title": "Growth and photosynthetic performance of Nostoc linckia (formerly N. calcicola) cells grown in BG11 and BG110 media.",
+    "abstract": "The biotechnological potential of Nostoc linckia as a biofertilizer and source of bioactive compounds makes it important to study its growth physiology and productivity. Since nitrogen is a fundamental component of N. linckia biomass, we compared the growth and biochemical composition of cultures grown in BG11 (i.e., in the presence of nitrate) and BG110 (in the absence of nitrate). Cultures grown in BG11 accumulated more cell biomass reaching a dry weight of 1.65 ± 0.06 g L-1, compared to 0.92 ± 0.01 g L-1 in BG110 after 240 h of culture. Biomass productivity was higher in culture grown in BG11 medium (average 317 ± 38 mg L-1 day-1) compared to that attained in BG110 (average 262 ± 37 mg L-1 day-1). The chlorophyll content of cells grown in BG11 increased continuously up to (39.0 ± 1.3 mg L-1), while in BG110 it increased much more slowly (13.6 ± 0.8 mg L-1). Biomass grown in BG11 had higher protein and phycobilin contents. However, despite the differences in biochemical composition and pigment concentration, between BG11 and BG110 cultures, both their net photosynthetic rates and maximum quantum yields of the photosystem II resulted in similar.",
+    "authors": [
+      "Eleftherios Touloupakis",
+      "Graziella Chini Zittelli",
+      "Ana Margarita Silva Benavides",
+      "Giuseppe Torzillo"
+    ],
+    "source": "pubmed",
+    "year": "",
+    "journal": "",
+    "doi": "",
+    "_screening_reason": "纳入: 通过两阶段筛选",
+    "classification": {
+      "mechanism": {
+        "code": "M6",
+        "confidence": 0.3
+      },
+      "algae_type": {
+        "code": "A3",
+        "confidence": 0.45
+      },
+      "application": {
+        "code": "C6",
+        "confidence": 0.3
+      },
+      "research_type": {
+        "code": "R6",
+        "confidence": 0.3
+      }
+    },
+    "_quality_score": 10,
+    "_quality_details": {
+      "methodology_total": 0,
+      "control": {
+        "score": 0,
+        "reason": "无对照"
+      },
+      "sample_size": {
+        "score": 0,
+        "reason": "样本量<30或未知"
+      },
+      "statistics": {
+        "score": 0,
+        "reason": "无统计分析"
+      },
+      "journal": {
+        "score": 6,
+        "reason": "SCI Q1期刊"
+      },
+      "relevance": {
+        "score": 4,
+        "reason": "完全匹配(微藻1个/生物肥1个/农业1个)"
+      },
+      "total": 10,
+      "decision": "复核"
+    },
+    "_quality_decision": "复核"
+  }
+]

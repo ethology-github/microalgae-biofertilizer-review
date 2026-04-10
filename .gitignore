@@ -1,15 +1,31 @@
+# Python
 __pycache__/
-*.pyc
-*.pyo
-.env
-.venv
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
 venv/
-data/raw/*.json
-data/deduplicated/*.json
-data/screened/*.json
-data/classified/*.json
-outputs/report.pdf
-outputs/report.tex
-outputs/report.md
-*.log
+
+# IDE
+.idea/
+.vscode/
+
+# Environment variables
+.env
+
+# Outputs - keep structure, ignore content
+outputs/data/*.json
+outputs/figures/*.png
+outputs/reports/*.pdf
+
+# macOS
 .DS_Store
+
+# uv
+.ruff_cache/
+.mypy_cache/

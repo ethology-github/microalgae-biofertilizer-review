@@ -1,46 +1,106 @@
-# Microalgae Biofertilizer Literature Review
+# Microalgae Biofertilizer Review
 
-> Automated literature review workflow for microalgae-based biofertilizers
+A systematic literature review and network analysis of microalgae-based biofertilizers for agricultural applications.
 
 ## Overview
 
-Automated pipeline for systematic literature review of microalgae biofertilizer research.
+This project collects, analyzes, and visualizes research data on microalgae biofertilizers, including their effects on crop yield, soil health, and nutrient content.
 
-## Databases
+## Features
 
-- AMiner (paper_search + paper_qa_search)
-- PubMed (via NCBI E-utilities)
-- sciai-engine (deep analysis: entity recognition, keyword extraction, paper classification)
+- **Data Collection**: Automated fetching of research papers and citation data
+- **Network Analysis**: Build and analyze citation/collaboration networks using NetworkX
+- **Data Visualization**: Generate interactive plots with Plotly and static figures with Matplotlib
+- **Report Generation**: Produce structured reports in PDF and DOCX formats
+- **Fuzzy Matching**: Robust paper deduplication using RapidFuzz
+- **Web Scraping**: Extract structured data from academic websites with BeautifulSoup4/lxml
 
-## Workflow Phases
+## Project Structure
 
-1. Multi-database search
-2. Deduplication & merge
-3. Screening & filtering
-4. Classification & quality scoring
-5. Visualization
-6. Report generation
-
-## Installation
-
-```bash
-pip install -r requirements.txt
-export AMINER_API_KEY="your_key"
-export SCIAIENGINE_TOKEN="your_token"
+```
+microalgae-biofertilizer-review/
+├── README.md
+├── pyproject.toml
+├── .gitignore
+├── outputs/
+│   ├── data/          # JSON data files
+│   ├── figures/       # PNG/SVG plots and charts
+│   └── reports/       # PDF/DOCX generated reports
+└── src/               # Source code (to be added)
 ```
 
 ## Quick Start
 
+### Prerequisites
+
+- Python 3.11 or higher
+- uv package manager (recommended)
+
+### Installation
+
 ```bash
-python scripts/01-search-aminer.py
-python scripts/02-search-pubmed.py
-python scripts/04-deduplicate-merge.py
-python scripts/05-screen-filter.py
-python scripts/08-visualize.py
-python scripts/09-generate-report.py
-python scripts/10-export-pdf.py
+# Clone the repository
+git clone https://github.com/yourusername/microalgae-biofertilizer-review.git
+cd microalgae-biofertilizer-review
+
+# Install dependencies with uv
+uv sync
+
+# Or with pip
+pip install -e .
 ```
+
+### Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
+# API Keys (optional)
+OPENALEX_API_KEY=your_key_here
+CROSSREF_API_KEY=your_key_here
+
+# Paths
+DATA_DIR=outputs/data
+FIGURE_DIR=outputs/figures
+REPORT_DIR=outputs/reports
+```
+
+### Running the Project
+
+```bash
+# Run the main data collection
+uv run python -m src.collect
+
+# Run network analysis
+uv run python -m src.analyze
+
+# Generate reports
+uv run python -m src.report
+
+# Run all steps
+uv run python -m src.main
+```
+
+## Development
+
+```bash
+# Run tests
+uv run pytest
+
+# Format code
+uv run ruff format .
+
+# Lint
+uv run ruff check .
+```
+
+## References
+
+- OpenAlex API Documentation
+- Crossref API Documentation
+- NetworkX Documentation
+- Plotly Python Library
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the LICENSE file for details.
