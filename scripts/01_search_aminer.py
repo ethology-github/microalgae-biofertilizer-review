@@ -182,11 +182,14 @@ def deduplicate_papers(papers: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 def main():
     """主函数"""
     parser = argparse.ArgumentParser(description="AMiner多策略文献检索")
-    parser.add_argument("--token", required=True, help="AMiner JWT token")
+    parser.add_argument("--token", required=True, help="AMiner API Key (Bearer token)")
+    parser.add_argument("--api-key", dest="api_key", help="AMiner API Key (alternative to --token)")
     parser.add_argument("--output", default="aminer_results.json", help="输出文件路径")
     parser.add_argument("--max-results", type=int, default=500, help="每个检索式最大结果数")
     args = parser.parse_args()
     
+    # 支持 --api-key 作为 --token 的别名
+    token = args.api_key or args.token
     logger = setup_logging("aminer_search")
     logger.info("=" * 60)
     logger.info("AMiner多策略文献检索开始")
@@ -197,14 +200,14 @@ def main():
     # 免费策略搜索
     logger.info("\n>>> 阶段1: 免费策略搜索 (GET /api/paper/search)")
     for query in SEARCH_QUERIES:
-        papers = search_by_title_free(args.token, query, args.max_results)
+        papers = search_by_title_free(token, query, args.max_results)
         all_papers.extend(papers)
         time.sleep(0.5)  # 避免请求过快
     
     # 付费策略搜索
     logger.info("\n>>> 阶段2: 付费策略搜索 (POST /api/paper/qa/search)")
     for query in SEARCH_QUERIES:
-        papers = search_by_topic_paid(args.token, query, args.max_results)
+        papers = search_by_topic_paid(token, query, args.max_results)
         all_papers.extend(papers)
         time.sleep(1)  # 付费接口间隔更长
     
@@ -219,7 +222,7 @@ def main():
     if paper_ids:
         # 批量获取详情
         logger.info(f"\n>>> 批量获取详情: {len(paper_ids)} 篇论文")
-        details = fetch_batch_details(args.token, paper_ids)
+        details = fetch_batch_details(token, paper_ids)
         
         if details:
             all_papers = details
