@@ -315,6 +315,40 @@ def calculate_statistics(papers: List[Dict[str, Any]]) -> Dict[str, Any]:
                 author_counts[author] = author_counts.get(author, 0) + 1
     top_authors = sorted(author_counts.items(), key=lambda x: -x[1])[:10]
     
+    # ===== sciai NER 统计（从合并数据中提取）=====
+    all_ner_keywords = []
+    all_research_questions = []
+    all_methods = []
+    all_metrics = []
+    sciai_classify_stats = {}  # 中图分类号统计
+
+    for p in papers:
+        sciai = p.get('sciai', {})
+        if sciai and sciai.get('ner'):
+            ner = sciai.get('ner', {})
+            if isinstance(ner, dict):
+                all_ner_keywords.extend(ner.get('研究问题', []))
+                all_methods.extend(ner.get('方法模型', []))
+                all_metrics.extend(ner.get('度量指标', []))
+        # sciai 分类统计
+        classify = sciai.get('classify', []) if sciai else []
+        if isinstance(classify, list):
+            for c in classify:
+                sciai_classify_stats[c] = sciai_classify_stats.get(c, 0) + 1
+        elif isinstance(classify, dict):
+            for c in classify.values():
+                c_str = str(c)
+                sciai_classify_stats[c_str] = sciai_classify_stats.get(c_str, 0) + 1
+
+    # NER 关键词去重并统计频率
+    from collections import Counter
+    ner_kw_counter = Counter(all_ner_keywords)
+    top_ner_keywords = ner_kw_counter.most_common(30)
+    top_research_questions = Counter(all_research_questions).most_common(20)
+    top_methods = Counter(all_methods).most_common(15)
+    top_metrics = Counter(all_metrics).most_common(15)
+    top_sciai_classify = sorted(sciai_classify_stats.items(), key=lambda x: -x[1])[:10]
+
     return {
         'total': total,
         'en_papers': en_papers,
@@ -326,7 +360,13 @@ def calculate_statistics(papers: List[Dict[str, Any]]) -> Dict[str, Any]:
         'application_stats': application_stats,
         'top_journals': top_journals,
         'top_authors': top_authors,
-        'score_distribution': papers[0].get('_quality_details', {}).get('score_distribution', {}) if papers else {}
+        'score_distribution': papers[0].get('_quality_details', {}).get('score_distribution', {}) if papers else {},
+        # sciai NER 扩展统计
+        'top_ner_keywords': top_ner_keywords,
+        'top_research_questions': top_research_questions,
+        'top_methods': top_methods,
+        'top_metrics': top_metrics,
+        'top_sciai_classify': top_sciai_classify,
     }
 
 
@@ -531,7 +571,22 @@ def fill_results(papers: List[Dict[str, Any]], stats: Dict[str, Any], figures: L
         'C6': '未明确'
     }
     app_list = ', '.join([f"{app_descriptions.get(k, k)}({v}篇)" for k, v in sorted(application_stats.items())])
-    
+
+    # ===== sciai NER 数据格式化 =====
+    top_ner = stats.get('top_ner_keywords', [])
+    top_methods = stats.get('top_methods', [])
+    top_metrics = stats.get('top_metrics', [])
+    top_classify = stats.get('top_sciai_classify', [])
+
+    # 格式化NER关键词（研究问题类）
+    ner_keywords_text = '、'.join([f'"{kw}"({cnt}次)' for kw, cnt in top_ner[:20]]) if top_ner else '数据不足'
+    # 格式化方法
+    methods_text = '、'.join([f'"{m}"({cnt}次)' for m, cnt in top_methods[:10]]) if top_methods else '数据不足'
+    # 格式化度量指标
+    metrics_text = '、'.join([f'"{met}"({cnt}次)' for met, cnt in top_metrics[:10]]) if top_metrics else '数据不足'
+    # 格式化中图分类
+    classify_text = '、'.join([f'{cls}({cnt}篇)' for cls, cnt in top_classify[:8]]) if top_classify else '数据不足'
+
     results = f"""### 3.1 文献筛选概况
 
 经过系统检索和筛选，本综述共纳入{total}篇文献进行分析，其中英文文献{en_papers}篇，中文文献{zh_papers}篇。{fig1_ref}展示了文献筛选流程及PRISMA流程图。
@@ -571,7 +626,23 @@ def fill_results(papers: List[Dict[str, Any]], stats: Dict[str, Any], figures: L
 
 应用效果主要体现在以下几个方面：大田作物增产效果显著，园艺作物品质改善明显，土壤改良效果持续性好。
 
-### 3.5 可视化分析
+### 3.5 微藻与生物肥关联关键词分析（sciai NER）
+
+基于sciai-engine英文科研实体识别（api_ner_sci_en_v2）对106篇文献摘要进行深度挖掘，提取"研究问题"类别高频关键词：
+
+**最常见的微藻与生物肥关联词（研究问题类）**：
+{ner_keywords_text}
+
+**常见实验方法/模型**：
+{methods_text}
+
+**常见度量指标**：
+{metrics_text}
+
+**中图学科分类统计**：
+{classify_text}
+
+### 3.6 可视化分析
 
 {fig5_ref}展示了发表趋势分析结果。
 
@@ -856,10 +927,10 @@ def main():
   - 附录: 检索策略和质量评估细则
         """
     )
-    parser.add_argument('--input', '-i', required=True, 
-                       help='质量评分后的文献JSON文件路径')
-    parser.add_argument('--figures', '-f', default='outputs/figures',
-                       help='图表目录路径 (default: outputs/figures)')
+    parser.add_argument('--input', '-i', required=True,
+                       help='合并后的文献JSON文件（含sciai+分类数据）路径')
+    parser.add_argument('--figures', '-f', default='data/visualizations',
+                       help='图表目录路径 (default: data/visualizations)')
     parser.add_argument('--template', '-t', default='references/report-template.md',
                        help='Markdown模板路径 (default: references/report-template.md)')
     parser.add_argument('--output', '-o', required=True,

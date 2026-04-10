@@ -132,7 +132,23 @@
 
 应用效果主要体现在以下几个方面：大田作物增产效果显著，园艺作物品质改善明显，土壤改良效果持续性好。
 
-### 3.5 可视化分析
+### 3.5 微藻与生物肥关联关键词分析（sciai NER）
+
+基于sciai-engine英文科研实体识别（api_ner_sci_en_v2）对106篇文献摘要进行深度挖掘，提取"研究问题"类别高频关键词：
+
+**最常见的微藻与生物肥关联词（研究问题类）**：
+"microalgae"(22次)、"Microalgae"(18次)、"Cyanobacteria"(11次)、"biofertilizer"(10次)、"cyanobacteria"(10次)、"Biofertilizer"(8次)、"Chlorella vulgaris"(6次)、"microalgal biomass"(6次)、"nitrogen-fixing cyanobacteria"(4次)、"biofertilizers"(4次)、"microalgae-based fertilizers"(3次)、"microalgae biomass production"(3次)、"Microalgal biomass"(3次)、"microalgae biomass"(3次)、"plant growth"(3次)、"microalgae strains"(3次)、"Biofertilizers"(2次)、"environmental impacts"(2次)、"bio-fertilizers"(2次)、"Sustainable Agriculture"(2次)
+
+**常见实验方法/模型**：
+"microalgae"(3次)、"microscopy"(2次)、"Field Experiment"(1次)、"green technology"(1次)、"Life Cycle Approach"(1次)、"life-cycle assessment"(1次)、"Foliar Spray"(1次)、"Soil Drench Method"(1次)、"foliar spray method"(1次)、"soil drench method"(1次)
+
+**常见度量指标**：
+"dry weight"(5次)、"biomass"(5次)、"plant growth"(5次)、"fresh weight"(4次)、"growth"(4次)、"photosynthetic pigments"(4次)、"shoot length"(4次)、"crop yields"(3次)、"plant height"(3次)、"protein"(3次)
+
+**中图学科分类统计**：
+S661.1 苹果(32篇)、S436.6 果树病虫害(21篇)、Q94 植物学(17篇)、R3 基础医学(17篇)、R574 肠疾病(11篇)、X2 社会与环境(9篇)、R4 临床医学(9篇)、Q943 植物细胞遗传学(8篇)
+
+### 3.6 可视化分析
 
 展示了发表趋势分析结果。
 
