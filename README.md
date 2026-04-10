@@ -1,16 +1,46 @@
-# Microalgae Biofertilizer Review
+# Microalgae Biofertilizer Literature Review
 
-A comprehensive review of microalgae-based biofertilizers for sustainable agriculture.
+> Automated literature review workflow for microalgae-based biofertilizers
 
-## Repository Structure
+## Overview
 
-- `docs/` - Documentation and review articles
-- `src/` - Source code and analysis scripts
-- `data/` - Datasets and processed data
-- `figures/` - Figures and visualizations
-- `notebooks/` - Jupyter notebooks for analysis
-- `scripts/` - Utility scripts
+Automated pipeline for systematic literature review of microalgae biofertilizer research.
 
-## Getting Started
+## Databases
 
-(Coming soon)
+- AMiner (paper_search + paper_qa_search)
+- PubMed (via NCBI E-utilities)
+- sciai-engine (deep analysis: entity recognition, keyword extraction, paper classification)
+
+## Workflow Phases
+
+1. Multi-database search
+2. Deduplication & merge
+3. Screening & filtering
+4. Classification & quality scoring
+5. Visualization
+6. Report generation
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+export AMINER_API_KEY="your_key"
+export SCIAIENGINE_TOKEN="your_token"
+```
+
+## Quick Start
+
+```bash
+python scripts/01-search-aminer.py
+python scripts/02-search-pubmed.py
+python scripts/04-deduplicate-merge.py
+python scripts/05-screen-filter.py
+python scripts/08-visualize.py
+python scripts/09-generate-report.py
+python scripts/10-export-pdf.py
+```
+
+## License
+
+MIT

@@ -1,0 +1,10 @@
+requests
+pandas
+matplotlib
+seaborn
+networkx
+scipy
+pymdown-extensions
+jinja2
+python-docx
+pdfkit
